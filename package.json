@@ -2,6 +2,7 @@
   "name": "mern-ecommerce",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start:": "server.js",
     "server": "nodemon server.js",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/tylercasperson/mern-ecommerce#readme",
   "description": "",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
