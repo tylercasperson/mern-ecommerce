@@ -14,7 +14,7 @@ const SpecificProduct = ({ match }) => {
       setProduct(data);
     };
     fetchProduct();
-  }, []);
+  }, [match]);
 
   return (
     <>
