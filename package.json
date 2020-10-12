@@ -1,9 +1,9 @@
 {
   "name": "mern-ecommerce",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "start:": "server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/tylercasperson/mern-ecommerce/issues"
   },
-  "homepage": "https://github.com/tylercasperson/mern-ecommerce#readme"
+  "homepage": "https://github.com/tylercasperson/mern-ecommerce#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
