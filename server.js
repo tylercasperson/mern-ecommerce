@@ -2,7 +2,7 @@ import express from 'express';
 import colors from 'colors';
 import dotenv from 'dotenv';
 import connectDB from './config/db.js';
-import products from './scripts/seedDB.js';
+import products from './seedData/products.js';
 
 dotenv.config();
 
