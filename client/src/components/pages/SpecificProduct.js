@@ -15,7 +15,7 @@ import Message from '../layout/Message';
 import Loader from '../layout/Loader';
 import { listProductDetails } from '../../actions/productActions';
 
-const SpecificProduct = ({ match }) => {
+const SpecificProduct = ({ history, match }) => {
   const [qty, setQty] = useState(0);
 
   const dispatch = useDispatch();
@@ -26,6 +26,10 @@ const SpecificProduct = ({ match }) => {
   useEffect(() => {
     dispatch(listProductDetails(match.params.id));
   }, [dispatch, match]);
+
+  const addToCardHandler = () => {
+    history.push(`/cart/${match.params.id}?qty=${qty}`);
+  };
 
   return (
     <>
@@ -103,6 +107,7 @@ const SpecificProduct = ({ match }) => {
 
                 <ListGroup.Item>
                   <Button
+                    onClick={addToCardHandler}
                     className='btn-block'
                     type='button'
                     disabled={product.countInStock === 0}
