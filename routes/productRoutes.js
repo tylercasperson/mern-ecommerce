@@ -5,7 +5,7 @@ import {
   getProductById,
 } from '../controllers/productController.js';
 
-router.get('/').get(getProducts);
-router.get('/:id').get(getProductById);
+router.route('/').get(getProducts);
+router.route('/:id').get(getProductById);
 
 export default router;
