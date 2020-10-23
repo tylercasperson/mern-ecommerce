@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import SpecificProduct from './components/pages/SpecificProduct';
 import Cart from './components/pages/Cart';
 import Login from './components/pages/Login';
+import Register from './components/pages/Register';
 
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
@@ -17,6 +18,7 @@ function App() {
       <main className='py-3'>
         <Container>
           <Route path='/login' component={Login} />
+          <Route path='/register' component={Register} />
           <Route path='/product/:id' component={SpecificProduct} />
           <Route path='/cart/:id?' component={Cart} />
           <Route path='/' component={Home} exact />
