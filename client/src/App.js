@@ -8,6 +8,7 @@ import Cart from './components/pages/Cart';
 import Login from './components/pages/Login';
 import Register from './components/pages/Register';
 import Profile from './components/pages/Profile';
+import Shipping from './components/pages/Shipping';
 
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <main className='py-3'>
         <Container>
+          <Route path='/shipping' component={Shipping} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
           <Route path='/profile' component={Profile} />

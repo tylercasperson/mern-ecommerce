@@ -59,7 +59,7 @@ const Profile = ({ location, history }) => {
           <Form.Group controlId='name'>
             <Form.Label>Name</Form.Label>
             <Form.Control
-              type='name'
+              type='text'
               placeholder='Enter your name'
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -69,7 +69,7 @@ const Profile = ({ location, history }) => {
           <Form.Group controlId='email'>
             <Form.Label>Email Address</Form.Label>
             <Form.Control
-              type='email'
+              type='text'
               placeholder='Enter email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -79,7 +79,7 @@ const Profile = ({ location, history }) => {
           <Form.Group controlId='password'>
             <Form.Label>Password</Form.Label>
             <Form.Control
-              type='password'
+              type='text'
               placeholder='Enter password'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -89,7 +89,7 @@ const Profile = ({ location, history }) => {
           <Form.Group controlId='confirmPassword'>
             <Form.Label>Confirm Password</Form.Label>
             <Form.Control
-              type='password'
+              type='text'
               placeholder='Confirm password'
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
