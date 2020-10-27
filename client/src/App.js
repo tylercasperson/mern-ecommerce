@@ -10,6 +10,7 @@ import Register from './components/pages/Register';
 import Profile from './components/pages/Profile';
 import Shipping from './components/pages/Shipping';
 import Payment from './components/pages/Payment';
+import PlaceOrder from './components/pages/PlaceOrder';
 
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
@@ -20,6 +21,7 @@ function App() {
       <Header />
       <main className='py-3'>
         <Container>
+          <Route path='/placeOrder' component={PlaceOrder} />
           <Route path='/payment' component={Payment} />
           <Route path='/shipping' component={Shipping} />
           <Route path='/login' component={Login} />
