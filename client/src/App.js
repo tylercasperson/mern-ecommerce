@@ -13,6 +13,7 @@ import Payment from './components/pages/Payment';
 import PlaceOrder from './components/pages/PlaceOrder';
 import Order from './components/pages/Order';
 import UserList from './components/pages/UserList';
+import UserEdit from './components/pages/UserEdit';
 
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
@@ -33,6 +34,7 @@ function App() {
           <Route path='/product/:id' component={SpecificProduct} />
           <Route path='/cart/:id?' component={Cart} />
           <Route path='/admin/userList' component={UserList} />
+          <Route path='/admin/user/:id/edit' component={UserEdit} />
           <Route path='/' component={Home} exact />
         </Container>
       </main>
