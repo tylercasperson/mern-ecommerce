@@ -14,6 +14,7 @@ import PlaceOrder from './components/pages/PlaceOrder';
 import Order from './components/pages/Order';
 import UserList from './components/pages/UserList';
 import UserEdit from './components/pages/UserEdit';
+import ProductList from './components/pages/ProductList';
 
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
@@ -35,6 +36,7 @@ function App() {
           <Route path='/cart/:id?' component={Cart} />
           <Route path='/admin/userList' component={UserList} />
           <Route path='/admin/user/:id/edit' component={UserEdit} />
+          <Route path='/admin/productList' component={ProductList} />
           <Route path='/' component={Home} exact />
         </Container>
       </main>
