@@ -16,6 +16,7 @@ import UserList from './components/pages/UserList';
 import UserEdit from './components/pages/UserEdit';
 import ProductList from './components/pages/ProductList';
 import ProductEdit from './components/pages/ProductEdit';
+import OrderList from './components/pages/OrderList';
 
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
@@ -39,6 +40,7 @@ function App() {
           <Route path='/admin/user/:id/edit' component={UserEdit} />
           <Route path='/admin/productList' component={ProductList} />
           <Route path='/admin/product/:id/edit' component={ProductEdit} />
+          <Route path='/admin/orderList' component={OrderList} />
           <Route path='/' component={Home} exact />
         </Container>
       </main>
