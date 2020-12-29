@@ -44,7 +44,6 @@ const OrderList = ({ history }) => {
             </tr>
           </thead>
           <tbody>
-            {console.log(orders)}
             {orders.map((order) => (
               <tr key={order._id}>
                 <td>{order._id}</td>
@@ -66,7 +65,7 @@ const OrderList = ({ history }) => {
                   )}
                 </td>
                 <td>
-                  <LinkContainer to={`/admin/order/${order._id}/edit`}>
+                  <LinkContainer to={`/order/${order._id}/edit`}>
                     <Button variant='light' className='btn-sm'>
                       Details
                     </Button>
