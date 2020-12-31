@@ -38,7 +38,12 @@ function App() {
           <Route path='/cart/:id?' component={Cart} />
           <Route path='/admin/userList' component={UserList} />
           <Route path='/admin/user/:id/edit' component={UserEdit} />
-          <Route path='/admin/productList' component={ProductList} />
+          <Route path='/admin/productList' component={ProductList} exact />
+          <Route
+            path='/admin/productList/:pageNumber'
+            component={ProductList}
+            exact
+          />
           <Route path='/admin/product/:id/edit' component={ProductEdit} />
           <Route path='/admin/orderList' component={OrderList} />
           <Route path='/search/:keyword' component={Home} exact />
