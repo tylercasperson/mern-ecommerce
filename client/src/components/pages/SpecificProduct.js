@@ -13,6 +13,7 @@ import {
 import Rating from '../layout/Rating';
 import Message from '../layout/Message';
 import Loader from '../layout/Loader';
+import Meta from '../layout/Meta';
 import {
   listProductDetails,
   createProductReview,
@@ -69,6 +70,11 @@ const SpecificProduct = ({ history, match }) => {
         <Message variant='danger'>{error}</Message>
       ) : (
         <>
+          <Meta
+            title={product.name}
+            description={product.description}
+            keywords={product.name}
+          />
           <Row>
             <Col md={6}>
               <Image src={product.image} alt={product.name} fluid />
