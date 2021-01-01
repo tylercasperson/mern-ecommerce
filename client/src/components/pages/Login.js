@@ -29,6 +29,11 @@ const Login = ({ location, history }) => {
     dispatch(login(email, password));
   };
 
+  const sampleLogin = (admin) => {
+    admin ? setEmail('admin@example.com') : setEmail('john@example.com');
+    setPassword('123456');
+  };
+
   return (
     <FormContainer>
       <h1>Sign In</h1>
@@ -58,6 +63,27 @@ const Login = ({ location, history }) => {
         <Button type='submit' variant='primary'>
           Sign In
         </Button>
+        <Row className='m-5'>
+          <h6>
+            Here are some quick login buttons so you can see the functionality
+            of the website...
+          </h6>
+          <Button
+            type='submit'
+            onClick={() => sampleLogin(true)}
+            className='m-3'
+          >
+            Admin login
+          </Button>
+
+          <Button
+            type='submit'
+            onClick={() => sampleLogin(false)}
+            className='m-3'
+          >
+            Employee login
+          </Button>
+        </Row>
       </Form>
 
       <Row className='py-3'>
