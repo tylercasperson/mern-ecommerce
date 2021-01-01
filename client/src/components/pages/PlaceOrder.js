@@ -4,7 +4,7 @@ import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../layout/Message';
 import CheckOutSteps from '../layout/CheckOutSteps';
-import { createOrder } from '../../actions/orderActions';
+import { createOrder } from '../../data/actions/orderActions';
 
 const PlaceOrder = ({ history }) => {
   const dispatch = useDispatch();

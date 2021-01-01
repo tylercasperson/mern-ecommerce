@@ -9,8 +9,8 @@ import FormContainer from '../layout/FormContainer';
 import {
   listProductDetails,
   updateProduct,
-} from '../../actions/productActions';
-import { PRODUCT_UPDATE_RESET } from '../../constants/productConstants';
+} from '../../data/actions/productActions';
+import { PRODUCT_UPDATE_RESET } from '../../data/constants/productConstants';
 
 const ProductEdit = ({ match, history }) => {
   const productId = match.params.id;

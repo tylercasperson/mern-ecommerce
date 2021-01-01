@@ -8,7 +8,7 @@ import Message from '../layout/Message';
 import Paginate from '../layout/Paginate';
 import ProductCarousel from '../layout/ProductCarousel';
 import Meta from '../layout/Meta';
-import { listProducts } from '../../actions/productActions.js';
+import { listProducts } from '../../data/actions/productActions.js';
 // import products from '../../products';
 
 const Home = ({ match }) => {

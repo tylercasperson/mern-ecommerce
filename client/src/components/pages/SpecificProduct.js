@@ -17,8 +17,8 @@ import Meta from '../layout/Meta';
 import {
   listProductDetails,
   createProductReview,
-} from '../../actions/productActions';
-import { PRODUCT_CREATE_REVIEW_RESET } from '../../constants/productConstants';
+} from '../../data/actions/productActions';
+import { PRODUCT_CREATE_REVIEW_RESET } from '../../data/constants/productConstants';
 
 const SpecificProduct = ({ history, match }) => {
   const [qty, setQty] = useState(1);

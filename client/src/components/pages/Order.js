@@ -10,11 +10,11 @@ import {
   getOrderDetails,
   payOrder,
   deliverOrder,
-} from '../../actions/orderActions';
+} from '../../data/actions/orderActions';
 import {
   ORDER_PAY_RESET,
   ORDER_DELIVER_RESET,
-} from '../../constants/orderConstants';
+} from '../../data/constants/orderConstants';
 
 const Order = ({ match, history }) => {
   const orderId = match.params.id;

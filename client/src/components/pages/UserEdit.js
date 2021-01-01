@@ -5,8 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import Message from '../../components/layout/Message';
 import Loader from '../layout/Loader';
 import FormContainer from '../layout/FormContainer';
-import { getUserDetails, updateUser } from '../../actions/userActions';
-import { USER_UPDATE_RESET } from '../../constants/userConstants';
+import { getUserDetails, updateUser } from '../../data/actions/userActions';
+import { USER_UPDATE_RESET } from '../../data/constants/userConstants';
 
 const UserEdit = ({ match, history }) => {
   const userId = match.params.id;

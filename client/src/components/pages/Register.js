@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Message from '../../components/layout/Message';
 import Loader from '../layout/Loader';
 import FormContainer from '../layout/FormContainer';
-import { register } from '../../actions/userActions';
+import { register } from '../../data/actions/userActions';
 
 const Register = ({ location, history }) => {
   const [name, setName] = useState('');

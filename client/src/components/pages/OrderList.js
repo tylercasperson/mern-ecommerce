@@ -4,7 +4,7 @@ import { Table, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../../components/layout/Message';
 import Loader from '../layout/Loader';
-import { listOrders } from '../../actions/orderActions';
+import { listOrders } from '../../data/actions/orderActions';
 
 const OrderList = ({ history }) => {
   const dispatch = useDispatch();

@@ -4,9 +4,12 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../../components/layout/Message';
 import Loader from '../layout/Loader';
-import { getUserDetails, updateUserProfile } from '../../actions/userActions';
-import { USER_UPDATE_PROFILE_RESET } from '../../constants/userConstants';
-import { listMyOrders } from '../../actions/orderActions';
+import {
+  getUserDetails,
+  updateUserProfile,
+} from '../../data/actions/userActions';
+import { USER_UPDATE_PROFILE_RESET } from '../../data/constants/userConstants';
+import { listMyOrders } from '../../data/actions/orderActions';
 
 const Profile = ({ location, history }) => {
   const [name, setName] = useState('');

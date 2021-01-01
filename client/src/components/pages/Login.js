@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Message from '../../components/layout/Message';
 import Loader from '../layout/Loader';
 import FormContainer from '../layout/FormContainer';
-import { login } from '../../actions/userActions';
+import { login } from '../../data/actions/userActions';
 
 const Login = ({ location, history }) => {
   const [email, setEmail] = useState('');
