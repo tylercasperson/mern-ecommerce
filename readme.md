@@ -1,6 +1,6 @@
 # Simple Ecommerce website
 
-### Here is the link to the live website: [Simple Ecommerce](https://simple--ecommerce.herokuapp.com/)
+## Here is the link to the live website: [Simple Ecommerce](https://simple--ecommerce.herokuapp.com/)
 
 ---
 
@@ -24,7 +24,7 @@ I wanted to learn more about eCommerce websites. This website started out as fol
 
 ---
 
-## Running development
+### Running development
 
 - Git clone
 - cd to the file location
@@ -42,7 +42,7 @@ I wanted to learn more about eCommerce websites. This website started out as fol
 - backend server will run on port 5000
 - frontend server will run on port 3000
 
-## env variables
+### env variables
 
 - NODE_ENV = development
 - PORT = 5000
